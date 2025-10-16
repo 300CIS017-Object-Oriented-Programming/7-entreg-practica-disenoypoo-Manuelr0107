@@ -19,7 +19,7 @@ public:
     std::string getId() const;
     void agregarVenta(Venta* venta);
     void mostrarHistorial() const;
+    void mostrarInfo() const;
 };
-
 
 #endif //POOSISTEMAGESTIONVENTAS_CLIENTE_H
