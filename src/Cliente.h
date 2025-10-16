@@ -11,9 +11,9 @@ private:
     std::vector<Venta*> historial;
 
 public:
-    Cliente();
-    Cliente(std::string nombre, std::string id);
-    ~Cliente();
+    Cliente(); //constructor por defecto
+    Cliente(std::string nombre, std::string id);  //constructor
+    ~Cliente();  //destructor
 
     std::string getNombre() const;
     std::string getId() const;
