@@ -4,27 +4,32 @@
 #include <iostream>
 #include <string>
 
-class Producto{
+#ifndef PRODUCTO_H
+#define PRODUCTO_H
+
+#include <string>
+#include <iostream>
+
+class Producto {
 private:
-    std::string codigo;
     std::string nombre;
+    std::string codigo;
     float precio;
     int cantidad;
 
 public:
     Producto();
-    Producto(std::string codigo, std::string nombre, float precio, int cantidad);
+    Producto(std::string n, std::string c, float p, int cant);
     ~Producto();
 
-    std::string getCodigo() const;
-    std::string getNombre() const;
-    float getPrecio() const;
-    int getCantidad() const;
-
-    void setCantidad(int nuevaCantidad);
-    void mostrarInfo() const;
-
+    void mostrarDatos();
+    std::string getCodigo();
+    float getPrecio();
+    int getCantidad();
+    void setCantidad(int c);
 };
+
+#endif
 
 
 #endif //POOSISTEMAGESTIONVENTAS_PRODUCTO_H

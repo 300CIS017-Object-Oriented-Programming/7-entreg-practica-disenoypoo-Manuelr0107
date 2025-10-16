@@ -3,23 +3,26 @@
 #include <string>
 #include <vector>
 #include <iostream>
-#include "venta.h"
+#include "Venta.h"
+
+
+#include <string>
+#include <iostream>
+
 class Cliente {
 private:
     std::string nombre;
-    std::string id;
-    std::vector<Venta*> historial;
+    int id;
 
 public:
-    Cliente(); //constructor por defecto
-    Cliente(std::string nombre, std::string id);  //constructor
-    ~Cliente();  //destructor
+    Cliente();
+    Cliente(std::string n, int i);
+    ~Cliente();
 
-    std::string getNombre() const;
-    std::string getId() const;
-    void agregarVenta(Venta* venta);
-    void mostrarHistorial() const;
-    void mostrarInfo() const;
+    void mostrarDatos();
+    int getId();
+    std::string getNombre();
 };
 
-#endif //POOSISTEMAGESTIONVENTAS_CLIENTE_H
+#endif
+
