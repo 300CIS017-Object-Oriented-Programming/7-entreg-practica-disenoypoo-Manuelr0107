@@ -1,0 +1,13 @@
+//
+// Created by ACER on 15/10/2025.
+//
+
+#ifndef POOSISTEMAGESTIONVENTAS_VENTA_H
+#define POOSISTEMAGESTIONVENTAS_VENTA_H
+
+
+class Venta {
+};
+
+
+#endif //POOSISTEMAGESTIONVENTAS_VENTA_H
